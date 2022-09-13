@@ -1,0 +1,184 @@
+/* BACKGROUND */
+
+body {
+    background-image: linear-gradient(to right, black, lightslategrey, black);
+}
+
+#background_container{
+
+}
+
+#background_left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 500pt;
+    height: 100%;
+    background-image: url("bg1_left.png");
+    pointer-events: none;
+}
+
+#background_right{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400pt;
+    height: 100%;
+    background-image: url("bg1_right.png");
+    background-position-x: 100%;
+    pointer-events: none;
+}
+
+
+/* GAME HEADER */
+
+h1 {
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 3em;
+    margin-top: 30pt;
+    margin-bottom: 20pt;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+.h1_dark {
+    color: #3d3434;
+}
+
+.h1_light {
+    color: darkgrey;
+}
+
+.game_box_header, .game_box_footer {
+    display: flex;
+    width: 500pt;
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: darkgrey;
+    text-shadow: 2px 2px black;
+}
+
+
+/* GAME VALUES */
+
+#time_value{
+    color: #ba4343;
+}
+
+#visibility_value, #level_value, #round_value{
+    color: antiquewhite;
+}
+
+#point_value{
+    color: #e5dc37;
+}
+
+
+/* GAME BOX */
+
+#game_welcome_box {
+    width: 485pt;
+    height: 485pt;
+
+    border: 5px #454F59 solid;
+    border-radius: 5pt;
+
+    background-color: #5D6A77;
+
+    margin: auto;
+    text-align: center;
+}
+
+#game_welcome_box div {
+    position: relative;
+    top: 210pt;
+
+    font-size: 50pt;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+    color: #1361dd;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+#game_box{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 500pt;
+    height: 500pt;
+
+    left: auto;
+    top: auto;
+    margin: auto;
+}
+
+.game_square {
+    box-sizing: border-box;
+    border: 5px lightslategrey solid;
+    border-radius: 10px;
+    cursor: cell;
+}
+
+.game_square_normal {
+    background-color: green;
+}
+
+#game_square_different {
+    background-color: purple;
+}
+
+#game_over {
+    width: 485pt;
+    height: 485pt;
+
+    border: 5px #454F59 solid;
+    border-radius: 5pt;
+
+    background-color: #5D6A77;
+
+    margin: auto;
+    text-align: center;
+}
+
+#game_over div {
+    position: relative;
+    top: 210pt;
+
+    font-size: 50pt;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+    color: #ba4343;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+
+
+/* GAME FOOTER */
+
+.game_box_footer {
+    display: flex;
+    width: 500pt;
+    margin: auto;
+    padding: 20pt;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: sandybrown;
+    text-shadow: 2px 2px black;
+}
+
+#restart_button, #play_button, .audio_on_off{
+    background-color: transparent;
+    border: none;
+}
+
+#restart_button_image, #play_button_image, #audio_on_off_image{
+    width: auto;
+    height: 30pt;
+}
