@@ -8,4 +8,4 @@ The application is deployed on Heroku, so you can try it by clicking on this lin
 <br>
 https://different-square.herokuapp.com/
 
-![](https://github.com/laczkoattilalaszlo/different-square/tree/main/image//home/laczkoattila/Desktop/gameplay_screenshot.png)
+![](https://github.com/laczkoattilalaszlo/different-square/blob/main/image/gameplay_screenshot.png)
