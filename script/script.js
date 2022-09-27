@@ -4,7 +4,7 @@ window.onload = () => {
 
 
 // Variables of the game:
-    ////// Consultation: A quearyselector egy pillanatkepet ad az adott elemrol, szoval minden node-ot tarolhatunk a dict-ben, attol fuggetlenul, hogy .remove()-oljuk vagy nem. Pl.:
+    ////// Consultation: A querySelector egy pillanatkepet ad az adott elemrol, szoval minden node-ot tarolhatunk a dict-ben, attol fuggetlenul, hogy .remove()-oljuk vagy nem. Pl.:
     // Game adjustment:
     // const level_setup = {
     // round_counts_of_levels:  [4, 4, 4, 4, 4, 5, 6, 7, 9, 10, 7, 4, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -185,7 +185,7 @@ window.onload = () => {
     }
 
 
-// This fucntion icnreases or decreases the points.
+// This function increases or decreases the points.
     function set_point(direction) {
         if (direction == 'increase') {
             point++;
@@ -197,7 +197,7 @@ window.onload = () => {
     }
 
 
-// This fucntion is responsible starting the timer.
+// This function is responsible starting the timer.
     function start_timer() {
         let countdown = document.querySelector(`#time_value`);
         let game_timer = setInterval(function () {
@@ -229,7 +229,7 @@ window.onload = () => {
     }
 
 
-// This function is for logging the detailes of the different game values. (For debugging.)
+// This function is for logging the details of the different game values. (For debugging.)
     function log_values() {
         console.log(
             `
@@ -265,9 +265,7 @@ window.onload = () => {
             game_welcome_box.setAttribute('id', 'game_box');
             // Change Play button to Restart button
             play_button.remove();
-            let content_game_box_footer = `
-                    <button id="restart_button"><img id="restart_button_image" src="../static/restart.png"></button>
-                    `;
+            let content_game_box_footer = `<button id="restart_button"><img id="restart_button_image" src="image/restart.png"></button>`;
             let game_box_footer = document.querySelector('.game_box_footer')
             game_box_footer.insertAdjacentHTML('afterbegin', content_game_box_footer);
             // Start the game
