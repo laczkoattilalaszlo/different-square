@@ -1,4 +1,8 @@
-<center> <h1>Different Squares</h1> </center>
+<div align="center">
+
+# Számlázó
+
+</div>
 
 ### What is Different Squares?
 This is a simple, but exciting board game. There is a board given filled with very similar sqaures, and the goal is to find the one, which differens in color, in a given time. As the time goes by the board size increases and the difference between the colors decreases, so level by level it is getting harder and herder. The game is a static web application, only JavaScript, HTML and CSS used.
