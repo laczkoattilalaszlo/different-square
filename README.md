@@ -1,10 +1,10 @@
 <div align="center">
 
-# Different Squares
+# Different Square
 
 </div>
 
-### :bulb: What is Different Squares?
+### :bulb: What is Different Square?
 This is a simple, but exciting board game. There is a board given filled with very similar sqaures, and the goal is to find the one, which differens in color, in a given time. As the time goes by the board size increases and the difference between the colors decreases, so level by level it is getting harder and herder. The game is a static web application, only JavaScript, HTML and CSS used.
 
 ### :arrow_forward: Try It Out!
