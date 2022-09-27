@@ -1,4 +1,8 @@
 window.onload = () => {
+// Zoom of the game:
+    document.body.style.zoom = "75%";
+
+
 // Variables of the game:
     ////// Consultation: A quearyselector egy pillanatkepet ad az adott elemrol, szoval minden node-ot tarolhatunk a dict-ben, attol fuggetlenul, hogy .remove()-oljuk vagy nem. Pl.:
     // Game adjustment:
