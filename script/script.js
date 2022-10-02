@@ -78,7 +78,7 @@ window.onload = () => {
         // Arrange the square element in the game box:
         let board_length = size ** 2;
         let divide_ratio = Math.round((100 / size) * 10000) / 10000;
-        let different_element_position = Math.floor(Math.random() * (Math.floor(board_length) - Math.ceil(0)) + Math.ceil(0));
+        let different_element_position = Math.floor(Math.random() * Math.floor(board_length));
         let element_color = create_normal_element_color();
         let different_elements_color = create_different_element_color(element_color, visibility);
         for (let i = 0; i < board_length; i++) {
@@ -121,7 +121,7 @@ window.onload = () => {
             draw_table(size);
             time_left = base_time;
             actual_match = next_match;
-            // Display level and round informartion
+            // Display level and round information
             level_value.textContent = `${actual_match[0] + 1}/${round_counts_of_levels.length}`;
             round_value.textContent = `${actual_match[1] + 1}/${all_round[actual_match[0]].length}`;
             visibility_value.textContent = `${visibility}/${base_visibility}`;
