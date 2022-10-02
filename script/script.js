@@ -1,17 +1,20 @@
 window.onload = () => {
 
-    // Zoom of the game:
-    document.body.style.zoom = "75%";
+    /////////////////
+    /// VARIABLES ///
+    /////////////////
 
-
-    // Game adjustment:
+    // Game adjustment values:
+    document.body.style.zoom = "75%"; // Adjust Zoom Level
     const round_counts_of_levels = [4, 4, 4, 4, 4, 5, 6, 7, 9, 10, 7, 4, 1, 1, 1, 1, 1, 1, 1, 1];
     const table_sizes_by_levels = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
     const base_visibility = 10; // Set higher to make the game easier, set lower to make th game harder.
     const base_time = 15;
+
     // Calculated values from adjustment:
     const visibility_decrease_value = base_visibility / round_counts_of_levels.length;
     const all_round = create_all_round(round_counts_of_levels, table_sizes_by_levels);
+
     // Values changing by the game flow:
     let visibility = base_visibility;
     let init_size = 2;
@@ -19,6 +22,10 @@ window.onload = () => {
     let point = 0;
     let time_left = base_time;
 
+
+    /////////////////
+    /// FUNCTIONS ///
+    /////////////////
 
     // Creates an array containing all the rounds of all the levels in a row.
     function create_all_round(round_counts_of_levels, table_sizes_by_levels) {
@@ -34,8 +41,7 @@ window.onload = () => {
     }
 
 
-    // This function displays the initial values. It DOES NOT sets back the initial values,
-    // you have to do it before using this function!
+    // Displays the initial values. It DOES NOT set back the initial values, you have to do it before using this function!
     function display_initial_values() {
         const time_value = document.querySelector('#time_value');
         const point_value = document.querySelector('#point_value');
@@ -67,7 +73,7 @@ window.onload = () => {
     }
 
 
-    // This function draws the table in the given size, with the given colors and handles it's events.
+    // Draws the table in the given size, with the given colors and handles its events.
     function draw_table(size) {
         // Arrange the square element in the game box:
         let board_length = size ** 2;
@@ -142,14 +148,14 @@ window.onload = () => {
     }
 
 
-    // This function deletes the content of the table.
+    // Deletes the content of the table.
     function delete_table() {
         const game_box = document.querySelector('#game_box');
         game_box.textContent = '';
     }
 
 
-    // This function gives the random colorization to the cards.
+    // Gives the random colorization to the cards.
     function create_normal_element_color() {
         let hue = Math.floor(Math.random() * (361 - 0) + 0);
         let saturation = Math.floor(Math.random() * (101 - 30) + 30);
@@ -158,7 +164,7 @@ window.onload = () => {
     }
 
 
-    // This function creates the different element color from th create_normal_element_color() return value.
+    // Creates the different element color from th create_normal_element_color() return value.
     function create_different_element_color(original_color_properties, visibility) {
         let random_choose_upper_or_down_difference = Math.random();
         let base_color = {...original_color_properties}
@@ -175,7 +181,7 @@ window.onload = () => {
     }
 
 
-    // This function increases or decreases the points.
+    // Increases or decreases the points.
     function set_point(direction) {
         if (direction == 'increase') {
             point++;
@@ -187,7 +193,7 @@ window.onload = () => {
     }
 
 
-    // This function is responsible starting the timer.
+    // Starts the timer.
     function start_timer() {
         let countdown = document.querySelector(`#time_value`);
         let game_timer = setInterval(function () {
@@ -219,7 +225,7 @@ window.onload = () => {
     }
 
 
-    // This function is for logging the details of the different game values. (For debugging.)
+    // Logs the details of the different game values. (For debugging.)
     function log_values() {
         console.log(`
         Time left: ${time_left}
@@ -231,8 +237,8 @@ window.onload = () => {
     }
 
 
-    // This function starts the game.
-    function initGame() {
+    // Starts the game.
+    function startGame() {
         // Base value display
         display_initial_values();
 
@@ -269,10 +275,10 @@ window.onload = () => {
     }
 
 
-    // Calling the function, which starts the game.
-    initGame();
+    ////////////////////////
+    /// FUNCTION CALL(S) ///
+    ////////////////////////
+
+    startGame();
+
 }
-
-
-
-
