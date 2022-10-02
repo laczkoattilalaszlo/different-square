@@ -1,8 +1,8 @@
 window.onload = () => {
 
-    /////////////////
-    /// VARIABLES ///
-    /////////////////
+    ///////////////////
+    /// VARIABLE(S) ///
+    ///////////////////
 
     // Game adjustment values:
     const zoom = "75%";
@@ -23,9 +23,9 @@ window.onload = () => {
     let time_left = base_time;
 
 
-    /////////////////
-    /// FUNCTIONS ///
-    /////////////////
+    ///////////////////
+    /// FUNCTION(S) ///
+    ///////////////////
 
     // Creates an array containing all the rounds of all the levels in a row.
     function create_all_round(round_counts_of_levels, table_sizes_by_levels) {
