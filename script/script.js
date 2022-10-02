@@ -18,12 +18,6 @@ window.onload = () => {
     let actual_match = [0, 0];
     let point = 0;
     let time_left = base_time;
-    // Background Music:
-    let on_off = document.querySelector('.game_box_footer .audio_on_off');
-    let audio = document.querySelector('.musicOn audio');
-    on_off.onclick = function () {
-        audio.paused ? audio.play() : audio.pause();
-    }
 
 
     // Creates an array containing all the rounds of all the levels in a row.
@@ -227,15 +221,13 @@ window.onload = () => {
 
     // This function is for logging the details of the different game values. (For debugging.)
     function log_values() {
-        console.log(
-            `
+        console.log(`
         Time left: ${time_left}
         Point: ${point}
         Visibility: ${visibility}
         Level: ${actual_match[0]}
         Round: ${actual_match[1]}
-        `
-        );
+        `);
     }
 
 
@@ -269,6 +261,11 @@ window.onload = () => {
             start_timer(base_time);
             log_values();
         });
+
+        // Determine what happens when click on Audio button
+        let audio_button = document.querySelector('#audio_button');
+        let audio = document.querySelector('#audio');
+        audio_button.addEventListener('click', () => audio.paused ? audio.play() : audio.pause());
     }
 
 

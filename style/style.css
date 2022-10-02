@@ -14,7 +14,7 @@ body {
     top: 0;
     width: 500pt;
     height: 100%;
-    background-image: url("aaa_heroku/different-square/imageft.png");
+    background-image: url("../image/squares_decoration_left.png");
     pointer-events: none;
 }
 
@@ -24,7 +24,7 @@ body {
     top: 0;
     width: 400pt;
     height: 100%;
-    background-image: url("aaa_heroku/different-square/imageght.png");
+    background-image: url("../image/squares_decoration_right.png");
     background-position-x: 100%;
     pointer-events: none;
 }
@@ -173,12 +173,12 @@ h1 {
     text-shadow: 2px 2px black;
 }
 
-#restart_button, #play_button, .audio_on_off{
+#restart_button, #play_button, #audio_button {
     background-color: transparent;
     border: none;
 }
 
-#restart_button_image, #play_button_image, #audio_on_off_image{
+#restart_button_image, #play_button_image, #audio_button_image {
     width: auto;
     height: 30pt;
 }
