@@ -100,8 +100,8 @@ html {
                 /* GAME BOX */
 
                 #game_welcome_box {
-                    width: 485pt;
-                    height: 485pt;
+                    width: 490pt;
+                    height: 490pt;
 
                     border: 5px #454F59 solid;
                     border-radius: 5pt;
@@ -151,8 +151,8 @@ html {
                 }
 
                 #game_over {
-                    width: 485pt;
-                    height: 485pt;
+                    width: 490pt;
+                    height: 490pt;
 
                     border: 5px #454F59 solid;
                     border-radius: 5pt;
