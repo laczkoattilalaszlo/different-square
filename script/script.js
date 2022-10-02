@@ -5,7 +5,7 @@ window.onload = () => {
     /////////////////
 
     // Game adjustment values:
-    document.body.style.zoom = "75%"; // Adjust Zoom Level
+    const zoom = "75%";
     const round_counts_of_levels = [4, 4, 4, 4, 4, 5, 6, 7, 9, 10, 7, 4, 1, 1, 1, 1, 1, 1, 1, 1];
     const table_sizes_by_levels = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
     const base_visibility = 10; // Set higher to make the game easier, set lower to make th game harder.
@@ -239,6 +239,9 @@ window.onload = () => {
 
     // Starts the game.
     function startGame() {
+        // Adjust zoom level
+        document.body.style.zoom = zoom;
+
         // Base value display
         display_initial_values();
 
