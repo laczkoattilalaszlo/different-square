@@ -8,25 +8,29 @@
     </head>
 
     <body>
-        <h1><span class="h1_dark">DIFFERENT</span> <span class="h1_light">SQUARE</span></h1>
+        <div id="content_container">
+            <div class="vertically_center_aligned">
+                <h1><span class="h1_dark">DIFFERENT</span> <span class="h1_light">SQUARE</span></h1>
 
-        <div class="game_box_header">
-            <p>TIME<br><span id="time_value"></span></p>
-            <p>POINT<br><span id="point_value"></span></p>
-            <p>VISIBILITY<br><span id="visibility_value"></span></p>
-            <p>LEVEL<br><span id="level_value"></span></p>
-            <p>ROUND<br><span id="round_value"></span></p>
-        </div>
+                <div class="game_box_header">
+                    <p>TIME<br><span id="time_value"></span></p>
+                    <p>POINT<br><span id="point_value"></span></p>
+                    <p>VISIBILITY<br><span id="visibility_value"></span></p>
+                    <p>LEVEL<br><span id="level_value"></span></p>
+                    <p>ROUND<br><span id="round_value"></span></p>
+                </div>
 
-        <div id="game_box"></div>
+                <div id="game_box"></div>
 
-        <div class="game_box_footer">
-            <button id="restart_button"><img id="restart_button_image" src="image/restart.png"></button>
-            <button id="play_button"><img id="play_button_image" src="image/play.png"></button>
-            <button id="audio_button">
-                <img id="audio_button_image" src="image/sound.png">
-                <audio id="audio" style="display:none;" src="audio/EXETEXE%20-%20Ronin.mp3" controls autoplay loop></audio>
-            </button>
+                <div class="game_box_footer">
+                    <button id="restart_button"><img id="restart_button_image" src="image/restart.png"></button>
+                    <button id="play_button"><img id="play_button_image" src="image/play.png"></button>
+                    <button id="audio_button">
+                        <img id="audio_button_image" src="image/sound.png">
+                        <audio id="audio" style="display:none;" src="audio/EXETEXE%20-%20Ronin.mp3" controls autoplay loop></audio>
+                    </button>
+                </div>
+            </div>
         </div>
 
         <div id="background_container">
